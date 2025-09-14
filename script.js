@@ -37,12 +37,12 @@ stopBTN.addEventListener('click', stopHandler)
 
 let formatTime = (time) => {
     let second = time % 60
-    let mineut = Math.floor((time % 3600) / 60)
+    let minute = Math.floor((time % 3600) / 60)
     let hour = Math.floor(time / 3600)
 
     if (second < 10) second = `0${second}`
-    if (mineut< 10) mineut = `0${mineut}`
+    if (minute< 10) minute = `0${minute}`
     if (hour < 10) hour = `0${hour}`
 
-    return `${hour} : ${mineut} : ${second} `
+    return `${hour} : ${minute} : ${second} `
 }
